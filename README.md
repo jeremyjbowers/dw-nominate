@@ -7,4 +7,4 @@ A Python library for transforming DW-NOMINATE fixed-width text files into usable
 dwnom
 ```
 
-Reads `data\senate\senate_dw_nominate.txt` to `output.csv`.
+Reads `data/senate/senate_dw_nominate.txt` to `output.csv`.
