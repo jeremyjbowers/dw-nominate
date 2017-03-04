@@ -1,6 +1,12 @@
 # dw-nominate
 A Python library for downloading and parsing DW-NOMINATE files for legislators, votes and parties.
 
+## Install
+```
+mkvirtualenv dwnom && git clone git@github.com:jeremyjbowers/dw-nominate.git
+cd dwnom && pip install -r requirements.txt
+```
+
 ## Usage
 ```
 python dwnom.py get <VOTE_TYPE> <HOUSE> <TERM>
