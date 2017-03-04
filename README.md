@@ -11,8 +11,8 @@ cd dwnom && pip install -r requirements.txt
 
 ### Votes and Legislators
 ```
-python dwnom.py get <VOTE_TYPE> <HOUSE> <TERM>
-python dwnom.py parse <VOTE_TYPE> <HOUSE> <TERM> <OUTPUT_FORMAT>
+python dwnom.py get <VOTE_TYPE> <HOUSE> <SESSION>
+python dwnom.py parse <VOTE_TYPE> <HOUSE> <SESSION> <OUTPUT_FORMAT>
 ```
 
 * Download rollcall votes for the 115th Senate as JSON.
