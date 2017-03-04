@@ -8,12 +8,13 @@ cd dwnom && pip install -r requirements.txt
 ```
 
 ## Usage
+
+### Votes and Legislators
 ```
 python dwnom.py get <VOTE_TYPE> <HOUSE> <TERM>
 python dwnom.py parse <VOTE_TYPE> <HOUSE> <TERM> <OUTPUT_FORMAT>
 ```
 
-### Examples
 * Download rollcall votes for the 115th Senate as JSON.
 ```
 python dwnom.py get rollcall senate 115
@@ -30,4 +31,12 @@ python dwnom.py parse member house 112 json
 ```
 python dwnom.py get rollcall both 110
 python dwnom.py parse rollcall both 110 json
+```
+
+### Parties
+* Download party data as CSV and JSON.
+```
+python party.py get party
+python party.py parse party csv
+python party.py parse party json
 ```
