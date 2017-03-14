@@ -1,9 +1,10 @@
 # dw-nominate
 A Python library for downloading and parsing DW-NOMINATE files for legislators, votes and parties.
+Written for python3, python2 will require at least some unicode-related fixes.
 
 ## Install
 ```
-mkvirtualenv dwnom && git clone git@github.com:jeremyjbowers/dw-nominate.git
+mkvirtualenv dwnom --python=$(which python3) && git clone git@github.com:jeremyjbowers/dw-nominate.git
 cd dw-nominate && pip install -r requirements.txt
 ```
 
