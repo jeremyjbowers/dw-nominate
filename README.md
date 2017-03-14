@@ -4,7 +4,7 @@ A Python library for downloading and parsing DW-NOMINATE files for legislators, 
 ## Install
 ```
 mkvirtualenv dwnom && git clone git@github.com:jeremyjbowers/dw-nominate.git
-cd dwnom && pip install -r requirements.txt
+cd dw-nominate && pip install -r requirements.txt
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ python dwnom.py parse rollcall senate 115 json
 * Download member votes for the 112th House of Representatives as CSV.
 ```
 python dwnom.py get member house 112
-python dwnom.py parse member house 112 json
+python dwnom.py parse member house 112 csv
 ```
 
 * Download rollcall votes for the 110th Congress (both houses) as JSON.
