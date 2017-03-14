@@ -1,10 +1,12 @@
 # dw-nominate
 A Python library for downloading and parsing DW-NOMINATE files for legislators, votes and parties.
 
+Written for python3, python2 will require at least some unicode-related fixes.
+
 ## Install
 ```
-mkvirtualenv dwnom && git clone git@github.com:jeremyjbowers/dw-nominate.git
-cd dwnom && pip install -r requirements.txt
+mkvirtualenv dwnom --python=$(which python3) && git clone git@github.com:jeremyjbowers/dw-nominate.git
+cd dw-nominate && pip install -r requirements.txt
 ```
 
 ## Usage
@@ -24,7 +26,7 @@ python dwnom.py parse rollcall senate 115 json
 * Download member votes for the 112th House of Representatives as CSV.
 ```
 python dwnom.py get member house 112
-python dwnom.py parse member house 112 json
+python dwnom.py parse member house 112 csv
 ```
 
 * Download rollcall votes for the 110th Congress (both houses) as JSON.
